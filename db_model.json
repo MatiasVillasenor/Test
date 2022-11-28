@@ -1,0 +1,134 @@
+{
+    "espacioCom": {
+        "name": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "foto": {},
+        "description": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 1000
+        },
+        "aforo": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "tiempoReserva": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        }
+      },
+      "usuario": {
+        "name": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "foto": {},
+        "correoPersonal": {
+          "type": "String",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "nroTelefono": {
+          "type": "number",
+          "required": true,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "role": {
+          "type": "String",
+          "required": true,
+          "enum": [
+            "admin",
+            "user"
+          ],
+          "default": "user"
+        },
+        "reserva": {
+          "type": "Schema.ObjectId",
+          "ref": "espacioCom",
+          "required": false
+        },
+        "sancionU": {
+          "type": "Schema.ObjectId",
+          "ref": "sancion",
+          "required": false
+        }
+      },
+      "reservaEspacio": {
+        "espacioReservado": {
+          "type": [
+            "Schema.ObjectId"
+          ],
+          "ref": "espacioCom",
+          "required": true
+        },
+        "FechaInicio": {
+          "day": null,
+          "hours": null,
+          "minutes": null,
+          "month": null,
+          "seconds": null,
+          "year": null
+        },
+        "FechaTermino": {
+          "day": null,
+          "hours": null,
+          "minutes": null,
+          "month": null,
+          "seconds": null,
+          "year": null
+        },
+        "observacion": {
+          "type": "String",
+          "required": false,
+          "minLenght": 1,
+          "maxLength": 2000
+        },
+        "estadoFisicoEspacio": {
+          "enum": [
+            "bueno",
+            "sucio",
+            "malo",
+            "requiere mantención"
+          ]
+        },
+        "estadoReserva": {
+          "enum": [
+            "Disponible",
+            "Reservado",
+            "En mantención"
+          ]
+        }
+      },
+      "sancion": {
+        "enum": [
+          "monetaria",
+          "restriccion de reserva"
+        ],
+        "tiempoSancion": {
+          "type": "String",
+          "required": false,
+          "minLenght": 1,
+          "maxLength": 100
+        },
+        "montoSancion": {
+          "type": "number",
+          "required": false,
+          "minLenght": 1,
+          "maxLength": 10
+        }
+      }
+
+}

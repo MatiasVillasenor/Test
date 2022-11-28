@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\vrisk\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%JAVA_HOME%\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\vrisk\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\vrisk\AppData\Local\Programs\Python\Python310\;C:\Users\vrisk\AppData\Local\Microsoft\WindowsApps;C:\Users\vrisk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vrisk\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\6.0\bin\
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\vrisk\Desktop\ISW\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Users\vrisk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\vrisk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\vrisk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
